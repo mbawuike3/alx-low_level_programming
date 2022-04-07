@@ -1,11 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 void populateResult(char *dest, char *n1, int n1_len, char *n2, int n2_len);
 int getLengthOfNum(char *str);
-void print_result(char *src, int length);
-
 /**
  * main - entry point, multiplies two numbers
  *
@@ -159,23 +156,4 @@ void populateResult(char *dest, char *n1, int n1_len, char *n2, int n2_len)
 	free(dest);
 	free(multiplicand);
 	free(multiplier);
-}
-
-/**
- * print_result - prints numbers stored as string in a memory location
- *
- * @src: pointer to memory that stores numbers as strings
- *
- * @length: length of @src
- */
-
-void print_result(char *src, int length)
-{
-	int i;
-
-	for (i = 0; i < length; i++)
-	{
-		if (src[i] >= '0' && src[i] <= '9')
-		printf("%c", src[i]);
-	}
 }
