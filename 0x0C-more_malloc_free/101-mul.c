@@ -49,8 +49,9 @@ char *create_xarray(int size)
 	array[index] = '\0';
 
 	return (array);
-	free(array);
+
 }
+free(array);
 
 /**
  * iterate_zeroes - Iterates through a string of numbers containing
